@@ -1,0 +1,66 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - says_name
+  - feedback
+  - if_number_needed
+  - give_phone_number
+
+entities:
+ - f_name
+ - l_name
+ - phone_num
+ 
+slots:
+    f_name:
+        type: text
+    phone_num:
+        type: text
+        
+responses:
+  utter_confrim_num:
+  - text: "so this is your number: {phone_num}?"
+  - text: "Let me confirm, so {phone_num}is your number yah?"
+  - text: "its {phone_num} , right?"
+  - text: "{phone_num}?, ok perfect"
+  
+  utter_greet_with_name:
+  - text: "Nice to see you {f_name}"
+  - text : "Hey {f_name}, how are you?"
+  - text : "Hey {f_name} ! what's up"
+  
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_ask_num:
+  - text: "Can I have your number please?"
+  - text: "I would like to have your number"
+  - text: "I need your number please"
+  - text: "Please give me your number."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,129 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: says_name
+  examples: |
+    - its me [suresh](f_name) [khatri](l_name)
+    - my name is [suresh](f_name)
+    - I am [Suresh](f_name)
+    - this is [khatri](l_name)
+    - [khatri](l_name) is my surname
+    - my surname is [khatri](l_name)
+    
+- intent: feedback
+  examples: |
+    - It’s very helpful
+    - I had the best experience speaking with you
+    - no feedback
+    - ok
+    - You are the most stupid bot I have ever seen
+    - the worst
+    
+- intent: give_phone_number
+  examples: |
+    - My number is [9808729596](phone_num)
+    - it's [9808729596](phone_num)
+    - its [9808729596](phone_num)
+    - [980872956](phone_num)
+    - ok its [980879596](phone_num)
+    - ya its [9808729596](phone_num)
+    
+- intent: if_number_needed
+  examples: |
+    - Do you need my number?
+    - Do I need to give you number?
+    - you need my number?
+    - you need my num?
+    - do i have to tell my number
+    - do i need to give you my number
+    - need my number?
