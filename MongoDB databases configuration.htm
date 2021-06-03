@@ -1,0 +1,2745 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List
+href="MongoDB%20databases%20configuration_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="MongoDB%20databases%20configuration_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Windows User</o:Author>
+  <o:LastAuthor>Windows User</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2021-06-03T19:14:00Z</o:Created>
+  <o:LastSaved>2021-06-03T19:15:00Z</o:LastSaved>
+  <o:Pages>15</o:Pages>
+  <o:Words>2220</o:Words>
+  <o:Characters>12660</o:Characters>
+  <o:Lines>105</o:Lines>
+  <o:Paragraphs>29</o:Paragraphs>
+  <o:CharactersWithSpaces>14851</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData
+href="MongoDB%20databases%20configuration_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="MongoDB%20databases%20configuration_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.3in;
+	margin-bottom:.0001pt;
+	text-indent:-.3in;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l0 level1 lfo2;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2E74B5;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.4in;
+	margin-bottom:.0001pt;
+	text-indent:-.4in;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l0 level2 lfo2;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2E74B5;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:normal;}
+h3
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.5in;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l0 level3 lfo2;
+	font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F4D78;
+	mso-themecolor:accent1;
+	mso-themeshade:127;
+	font-weight:normal;}
+h4
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.6in;
+	margin-bottom:.0001pt;
+	text-indent:-.6in;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l0 level4 lfo2;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2E74B5;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 5 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.7in;
+	margin-bottom:.0001pt;
+	text-indent:-.7in;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	mso-list:l0 level5 lfo2;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2E74B5;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:normal;}
+h6
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 6 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.8in;
+	margin-bottom:.0001pt;
+	text-indent:-.8in;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	mso-list:l0 level6 lfo2;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F4D78;
+	mso-themecolor:accent1;
+	mso-themeshade:127;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 7 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.9in;
+	margin-bottom:.0001pt;
+	text-indent:-.9in;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	mso-list:l0 level7 lfo2;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F4D78;
+	mso-themecolor:accent1;
+	mso-themeshade:127;
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 8 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	margin-bottom:.0001pt;
+	text-indent:-1.0in;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	mso-list:l0 level8 lfo2;
+	font-size:10.5pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 9 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.1in;
+	margin-bottom:.0001pt;
+	text-indent:-1.1in;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	mso-list:l0 level9 lfo2;
+	font-size:10.5pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;
+	font-style:italic;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-priority:35;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#44546A;
+	mso-themecolor:text2;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-link:"No Spacing Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2E74B5;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2E74B5;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F4D78;
+	mso-themecolor:accent1;
+	mso-themeshade:127;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2E74B5;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 5";
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2E74B5;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 6";
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F4D78;
+	mso-themecolor:accent1;
+	mso-themeshade:127;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 7";
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F4D78;
+	mso-themecolor:accent1;
+	mso-themeshade:127;
+	font-style:italic;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 8";
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 9";
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;
+	font-style:italic;}
+span.NoSpacingChar
+	{mso-style-name:"No Spacing Char";
+	mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"No Spacing";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1529299269;
+	mso-list-template-ids:67698725;}
+@list l0:level1
+	{mso-level-style-link:"Heading 1";
+	mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l0:level2
+	{mso-level-style-link:"Heading 2";
+	mso-level-text:"%1\.%2";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.4in;}
+@list l0:level3
+	{mso-level-style-link:"Heading 3";
+	mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l0:level4
+	{mso-level-style-link:"Heading 4";
+	mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.6in;}
+@list l0:level5
+	{mso-level-style-link:"Heading 5";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.7in;}
+@list l0:level6
+	{mso-level-style-link:"Heading 6";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.8in;}
+@list l0:level7
+	{mso-level-style-link:"Heading 7";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.9in;
+	text-indent:-.9in;}
+@list l0:level8
+	{mso-level-style-link:"Heading 8";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l0:level9
+	{mso-level-style-link:"Heading 9";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-1.1in;}
+@list l1
+	{mso-list-id:1594702672;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1891088788 1617583076 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-start-at:2;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1030"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<h2 style='text-align:justify;mso-list:l0 level2 lfo2'><a name="_Toc73376948"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>MongoDB databases: Installation &amp;
+Configuration</a><o:p></o:p></h2>
+
+<h3 style='text-align:justify;mso-list:l0 level3 lfo2'><a name="_Toc73376949"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Introduction</a><o:p></o:p></h3>
+
+<p class=MsoNoSpacing style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'>Why to use database for this project?<o:p></o:p></b></p>
+
+<p class=MsoNoSpacing style='text-align:justify'>By default Rasa chatbot stores
+message history only in system memory during operation time. Once the chatbot
+is restarted all the messages stored by memory tracker-store gets lost. To
+retain the conversation history even after at later times, Rasa framework
+allows use of tracker-store to use MongoDB database for storing conversations
+automatically.<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'>What is MongoDB?<o:p></o:p></b></p>
+
+<p class=MsoNoSpacing style='text-align:justify'>MongoDB database is a NoSQL
+database which stores data as collections and each collections consists of
+documents. Documents are equivalent of rows or tuples and collections
+equivalent to tables in relational databases.<span style='mso-spacerun:yes'> 
+</span>Therefore, MongoDB is a document-oriented database and schema-less
+structure of the document allows storing of unstructured data. <span
+style='mso-spacerun:yes'> </span><o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'>MongoDB by default runs on
+port number <b style='mso-bidi-font-weight:normal'>27017</b>.<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'>Why to use MongoDB for this project?<o:p></o:p></b></p>
+
+<p class=MsoNoSpacing style='text-align:justify'>The reason for choosing
+MongoDB database with this project is that it is one of the supported by
+tracker-store in Rasa framework. It supports feature called “Change Stream”
+which allows the application listening for changes in databases to receive
+changes occurring at database at particular reference point. This feature is
+very handy while it comes to visualizing sentiments for user sent messages at
+real time. <o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<h3 style='text-align:justify;mso-list:l0 level3 lfo2'><a name="_Toc73376950"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Change Stream: MongoDB</a><o:p></o:p></h3>
+
+<p class=MsoNormal style='text-align:justify'>Change Stream in MongoDB is a
+feature that allows MongoDB database as a real-time database. With change
+stream feature applied, changes (CRUD operations) happening in databases are
+propagated to applications which are listening for changes in that database.
+Change Stream avoids the need for applications to make queries to database in
+certain intervals repeatedly looking for changes in the database. Applications
+can subscribe to changes in database over a particular collection and even
+whole database.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Change Stream feature is only
+supported by MongoDB version 3.6 or later. Change Stream feature requires
+deployment of <b style='mso-bidi-font-weight:normal'>replicaset. Replicaset </b>is
+cluster of MongoDB servers where one of the server acts as a primary server and
+the rest act as secondary server. Primary server is both readable and writable.
+However, secondary server is only readable. Secondary servers in replicaset
+hold replica of databases present on Primary server. More, precisely, secondary
+servers are just replicas of primary server. The purpose of those replica
+secondary servers is to serve as back up of data present on primary servers and
+support availability of data via fault tolerance.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_31" o:spid="_x0000_i1047" type="#_x0000_t75"
+ style='width:190.5pt;height:211.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image001.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=254 height=282
+src="MongoDB%20databases%20configuration_files/image001.png" v:shapes="Picture_x0020_31"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377057">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377057'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377057'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377057'><span style='mso-no-proof:yes'>23</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377057'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377057'> MongoDB replicaset example</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>[7] Whenever, data are changed on
+primary MongoDB server in replicaset, primary server maintains log of it inside
+operation log e.g. oplog. The secondary server reads this operation log and
+reflects the same changes in their databases which resembles with the database
+on primary server. The change stream is also propagated to those applications
+who listen for the changes.<o:p></o:p></p>
+
+<h3 style='text-align:justify;mso-list:l0 level3 lfo2'><a name="_Toc73376951"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Installation: MongoDB Compass</a><o:p></o:p></h3>
+
+<p class=MsoNoSpacing style='text-align:justify'>MongoDB Compass which is GUI
+along with underlying local MongoDB database has been used for the project.
+Main reason behind using MongoDB Compass is that it comes with the GUI that
+helps with the following:<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='margin-left:.5in;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Visualizing the data in database<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='margin-left:.5in;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Performing database operations easily (e.g.
+deleting documents, creating databases, creating aggregating pipelines)<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='margin-left:.5in;text-align:justify;text-indent:
+-.25in;mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Visualizing performances etc.<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'>This provides interaction with
+the database more convenient.<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'>MongoDB Compass for Windows can
+be downloaded and installed using the following link.<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><a
+href="https://www.mongodb.com/try/download/compass">https://www.mongodb.com/try/download/compass</a>
+<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'>Installation of MongoDB
+Compass is easy and straightforward. The version of MongoDB Compass and
+underlying MongoDB database software used for this project is shown below.<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_30"
+ o:spid="_x0000_i1046" type="#_x0000_t75" style='width:468pt;height:209.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image002.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=279
+src="MongoDB%20databases%20configuration_files/image003.jpg" v:shapes="Picture_x0020_30"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377058">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377058'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377058'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377058'><span style='mso-no-proof:yes'>24</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377058'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377058'> MongoDB Compass user interface</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>MongoDB version: 4.4.5<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>MongoDB Compass: 1.26.1<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>MongoDB is installed as
+standalone local installation on the PC used.<o:p></o:p></p>
+
+<h3 style='text-align:justify;mso-list:l0 level3 lfo2'><a name="_Toc73376952"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Verifying Installation: MongoDB</a><o:p></o:p></h3>
+
+<p class=MsoNormal style='text-align:justify'>Installation of MongoDB can be
+verified by opening a command prompt and running the command ‘mongo’ command as
+shown below. This method can be used if path variable for environment variable
+was created during the installation of MongoDB compass.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_40"
+ o:spid="_x0000_i1045" type="#_x0000_t75" style='width:468pt;height:245.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image004.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=327
+src="MongoDB%20databases%20configuration_files/image005.jpg" v:shapes="Picture_x0020_40"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377059">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377059'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377059'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377059'><span style='mso-no-proof:yes'>25</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377059'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377059'> verifying installation of MongoDB using
+'mongo' command</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>If MongoDB is installed then we
+are connected to MongoDB database and we can run some commands as shown in the
+diagram above.<o:p></o:p></p>
+
+<h3 style='text-align:justify;mso-list:l0 level3 lfo2'><a name="_Toc73376953"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Configuring: MongoDB Replicaset</a><o:p></o:p></h3>
+
+<p class=MsoNormal style='text-align:justify'>The replicaset shown on diagram
+above has been implemented for this project i.e. the cluster consists of<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>1 primary server <o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>2 secondary servers<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Following steps have been taken
+for configuring the replicaset of MongoDB databases.<o:p></o:p></p>
+
+<h4 style='text-align:justify;mso-list:l0 level4 lfo2'><a name="_Toc73376954"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.5.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Stopping MongoDB service</a><o:p></o:p></h4>
+
+<p class=MsoNormal style='text-align:justify'>If MongoDB is running, the
+process needs to be sopped. <o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>‘services.msc’ can be typed in
+Run dialog box on Windows and the MongoDB service can be disabled as shown
+below.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_32"
+ o:spid="_x0000_i1044" type="#_x0000_t75" style='width:307.5pt;height:161.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image006.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=410 height=215
+src="MongoDB%20databases%20configuration_files/image006.png" v:shapes="Picture_x0020_32"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377060">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377060'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377060'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377060'><span style='mso-no-proof:yes'>26</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377060'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377060'> Opening Services window</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_33"
+ o:spid="_x0000_i1043" type="#_x0000_t75" style='width:340.5pt;height:188.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image007.png"
+  o:title="" cropbottom="18644f" cropright="17959f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=454 height=251
+src="MongoDB%20databases%20configuration_files/image008.jpg" v:shapes="Picture_x0020_33"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377061">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377061'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377061'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377061'><span style='mso-no-proof:yes'>27</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377061'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377061'> Stopping MongoDB service</span><o:p></o:p></p>
+
+<h4 style='text-align:justify;mso-list:l0 level4 lfo2'><a name="_Toc73376955"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.5.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Defining root folders for Secondary MongoDB
+Servers</a><o:p></o:p></h4>
+
+<p class=MsoNormal style='text-align:justify'>We aim to choose, MongoDB
+instance running at port number 27017 as a primary server. For creating two
+secondary servers root folders for those databases needs to be created
+separately as shown on the diagram below.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_34"
+ o:spid="_x0000_i1042" type="#_x0000_t75" style='width:443.25pt;height:210.75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image009.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=591 height=281
+src="MongoDB%20databases%20configuration_files/image010.png" v:shapes="Picture_x0020_34"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377062">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377062'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377062'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377062'><span style='mso-no-proof:yes'>28</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377062'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377062'> defining root folders for secondary
+databases</span><o:p></o:p></p>
+
+<p class=MsoListParagraph style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Since 2 secondary databases are about to be
+used, two folders i.e. <b style='mso-bidi-font-weight:normal'>secondary_database1</b>
+and <b style='mso-bidi-font-weight:normal'>secondary_database2</b> are created
+in C drive. <o:p></o:p></p>
+
+<h4 style='text-align:justify;mso-list:l0 level4 lfo2'><a name="_Toc73376956"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.5.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Defining sub-folders: db, log and config folders
+for each secondary servers</a><o:p></o:p></h4>
+
+<p class=MsoNormal style='text-align:justify'>Inside each root folders, the
+folders: db, config and log need to be created. Following are few details about
+the significance of those folders.<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>db folder as a Databases for storing collection
+and documents and other related data<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>log folder for storing information regarding
+different operations performed<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>config folder for defining and storing
+configuration information about ports and database and log files<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'>This can
+be done as shown below.<span style='mso-no-proof:yes'> <!--[if gte vml 1]><v:shape
+ id="Picture_x0020_35" o:spid="_x0000_i1041" type="#_x0000_t75" style='width:460.5pt;
+ height:145.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image011.png"
+  o:title="" cropbottom="21614f" cropleft="1050f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=614 height=194
+src="MongoDB%20databases%20configuration_files/image012.png" v:shapes="Picture_x0020_35"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377063">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377063'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377063'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377063'><span style='mso-no-proof:yes'>29</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377063'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377063'> creating db, config and log folder for
+secondary database</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>The same folders need to be
+created inside <b style='mso-bidi-font-weight:normal'>secondary_database2 </b>as
+well.<o:p></o:p></p>
+
+<h4 style='text-align:justify;mso-list:l0 level4 lfo2'><a name="_Toc73376957"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.5.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Creating ‘mongo.cfg’ file</a><o:p></o:p></h4>
+
+<p class=MsoNormal style='text-align:justify'>Inside config folder, a
+configuration file called ‘mongo.cfg’ file needs to be created. This file is
+referred to as configuration file by the MongoDB server to which that root
+folder is assigned to during runtime. The ‘mongo.cfg’ file consists of
+following details:<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>dbpath : specifies path to the database where
+data are stored for that secondary server<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>logpath: specifies path to the log folder where
+log generated are written during the operation for the secondary server<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>port: specifies one of the registered port number
+on which that secondary server will run.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='mso-no-proof:yes'>Following
+is the snapshot showing how it is done.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_36"
+ o:spid="_x0000_i1040" type="#_x0000_t75" style='width:369pt;height:226.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image013.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=492 height=302
+src="MongoDB%20databases%20configuration_files/image014.png" v:shapes="Picture_x0020_36"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377064">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377064'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377064'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377064'><span style='mso-no-proof:yes'>30</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377064'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377064'> creating config file for secondary server 1</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_37"
+ o:spid="_x0000_i1039" type="#_x0000_t75" style='width:411.75pt;height:168.75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image015.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=549 height=225
+src="MongoDB%20databases%20configuration_files/image016.jpg" v:shapes="Picture_x0020_37"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377065">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377065'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377065'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377065'><span style='mso-no-proof:yes'>31</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377065'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377065'> creating config file for secondary server 2</span><o:p></o:p></p>
+
+<h4 style='text-align:justify;mso-list:l0 level4 lfo2'><a name="_Toc73376958"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.5.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Creating ‘mongod.log’ file</a><o:p></o:p></h4>
+
+<p class=MsoNormal style='text-align:justify'>Inside ‘log’ folder of both root
+directories created, an empty log file named ‘mongod.log’ needs to be created.
+This file will be written with all the logs generated during server run later
+when MongoDB servers are started.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_38"
+ o:spid="_x0000_i1038" type="#_x0000_t75" style='width:444pt;height:128.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image017.png"
+  o:title="" cropbottom="26169f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=592 height=171
+src="MongoDB%20databases%20configuration_files/image018.png" v:shapes="Picture_x0020_38"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377066">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377066'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377066'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377066'><span style='mso-no-proof:yes'>32</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377066'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377066'> creating 'mongod.log' file inside log folder
+inside secondary database1 folder</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_39"
+ o:spid="_x0000_i1037" type="#_x0000_t75" style='width:468pt;height:114.75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image019.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=153
+src="MongoDB%20databases%20configuration_files/image020.jpg" v:shapes="Picture_x0020_39"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377067">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377067'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377067'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377067'><span style='mso-no-proof:yes'>33</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377067'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377067'> creating 'mongod.log' file inside log folder
+inside secondary database2 folder</span><o:p></o:p></p>
+
+<h4 style='text-align:justify;mso-list:l0 level4 lfo2'><a name="_Toc73376959"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.5.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Creating and Running 3 instances of MongoDB</a><o:p></o:p></h4>
+
+<p class=MsoNormal style='text-align:justify'>Now, three different instances of
+MongoDB needs to be created. One is for primary server that will run on port
+number 27017 and two for secondary servers as replica servers which will
+operate on port numbers 27020 and 27021 as stated inside ‘mongod.cfg’ files
+above. <o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Following 3 commands are run
+individually for creating and running 3 instances of MongoDB databases.<o:p></o:p></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNoSpacing style='text-align:justify'><span style='background:
+  yellow;mso-highlight:yellow'>mongod --dbpath &quot;C:\Program
+  Files\MongoDB\Server\4.4\data&quot; --logpath &quot;C:\Program
+  Files\MongoDB\Server\4.4\log\mongo.log&quot; --port 27017
+  --storageEngine=wiredTiger --journal --replSet rSet<o:p></o:p></span></p>
+  <p class=MsoNoSpacing style='text-align:justify'><span style='background:
+  yellow;mso-highlight:yellow'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNoSpacing style='text-align:justify'><span style='background:
+  yellow;mso-highlight:yellow'>mongod --dbpath
+  &quot;C:\secondary_database1\db&quot; --logpath
+  &quot;C:\secondary_database1\log\mongod.log&quot; --port 27020
+  --storageEngine=wiredTiger --journal --replSet rSet<o:p></o:p></span></p>
+  <p class=MsoNoSpacing style='text-align:justify'><span style='background:
+  yellow;mso-highlight:yellow'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNoSpacing style='text-align:justify'><span style='background:
+  yellow;mso-highlight:yellow'>mongod --dbpath &quot;C:\secondary_database2\db&quot;
+  --logpath &quot;C:\secondary_database2\log\mongod.log&quot; --port 27021
+  --storageEngine=wiredTiger --journal --replSet rSet</span><o:p></o:p></p>
+  <p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify'>Each of the commands has same
+parameters, they can be described as follows:<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>dbpath flag specifies path the database to be
+used by the instance of MongoDB being created.<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>logpath flag specifies path to log file for
+writing log information by the MongoDB instance being created during running
+operations.<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>port flag binds the instance of MongoDB being
+created to the port specified.<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>storageEngine specifies as default storage
+engine to be used while storing the document and collection in database. The
+default storageEngine is wiredTiger for MongoDB.<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>replSet flag indicates that those instances are
+not going to be started as standalone instances but rather as a part of
+replicaset called ‘rSet’ in this case. The name of the replicaset can be any
+string value.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>To run these commands windows
+command prompt needs to be opened with administrative privilege.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_42" o:spid="_x0000_i1036" type="#_x0000_t75" style='width:282.75pt;
+ height:263.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image021.png"
+  o:title="" cropright="25942f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=377 height=351
+src="MongoDB%20databases%20configuration_files/image022.jpg" v:shapes="Picture_x0020_42"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377068">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377068'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377068'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377068'><span style='mso-no-proof:yes'>34</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377068'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377068'> opening command prompt with administrative
+privilege</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Those 3 different commands shown
+above can be run inside 3 different command prompts as shown below.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_41"
+ o:spid="_x0000_i1035" type="#_x0000_t75" style='width:442.5pt;height:111.75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image023.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=590 height=149
+src="MongoDB%20databases%20configuration_files/image024.png" v:shapes="Picture_x0020_41"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377069">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377069'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377069'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377069'><span style='mso-no-proof:yes'>35</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377069'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377069'> Starting MongoDB replicaset instance on port
+27017</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_43"
+ o:spid="_x0000_i1034" type="#_x0000_t75" style='width:468pt;height:114.75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image025.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=153
+src="MongoDB%20databases%20configuration_files/image026.png" v:shapes="Picture_x0020_43"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377070">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377070'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377070'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377070'><span style='mso-no-proof:yes'>36</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377070'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377070'> Starting MongoDB replicaset instance on port
+27020</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_44"
+ o:spid="_x0000_i1033" type="#_x0000_t75" style='width:468pt;height:102pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image027.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=136
+src="MongoDB%20databases%20configuration_files/image028.png" v:shapes="Picture_x0020_44"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377071">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377071'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377071'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377071'><span style='mso-no-proof:yes'>37</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377071'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377071'> Starting MongoDB replicaset instance on port
+27021</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Now 3 different instances of
+MongoDB are running in our single localhost machine.<o:p></o:p></p>
+
+<h4 style='text-align:justify;mso-list:l0 level4 lfo2'><a name="_Toc73376960"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.5.7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Configuring Replicaset: ‘rSet’</a><o:p></o:p></h4>
+
+<p class=MsoNormal style='text-align:justify'>Now to configure, replicaset
+‘rSet’ with details about those running instances, we need to connect to
+MongoDB instance running on port number 27017 i.e. the server process running
+on default MongoDB port.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>The following command can be used
+to connect to MongoDB instance running at particular port.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='background:yellow;
+mso-highlight:yellow'>mongo --port [port number]</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>The diagram bellow shows running
+of the command.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4"
+ o:spid="_x0000_i1032" type="#_x0000_t75" style='width:458.25pt;height:233.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image029.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=611 height=311
+src="MongoDB%20databases%20configuration_files/image030.jpg" v:shapes="Picture_x0020_4"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377072">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377072'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377072'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377072'><span style='mso-no-proof:yes'>38</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377072'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377072'> connecting to MongoDB instance running on
+port 27017</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Now, replicaset configurations
+needs to be written into replicaset variable ‘rsconf’ with replicaset ID as the
+name of replicaset we specified while running those 3 different instances of
+MongoDB. The following command is used for defining replicaset variable.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='background:yellow;
+mso-highlight:yellow'>rsconf={_id:&quot;rSet&quot;,members:[{_id:0,host:&quot;localhost:27017&quot;}]}</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>where,<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>‘rsconf’ is a dictionary variable which holds
+replicaset information<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>id holds the name for the replicaset<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>host specifies the domain along with port number
+for primary server<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>The command is executed to produce
+the output as shown below.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5"
+ o:spid="_x0000_i1031" type="#_x0000_t75" style='width:347.25pt;height:149.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image031.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=463 height=199
+src="MongoDB%20databases%20configuration_files/image032.jpg" v:shapes="Picture_x0020_5"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377073">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377073'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377073'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377073'><span style='mso-no-proof:yes'>39</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377073'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377073'> writing rsconf variable</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Next, we need to initiate or
+activate the replicaset we just created using the following command.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='background:yellow;
+mso-highlight:yellow'>rs.initiate(rsconf)</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>where, <o:p></o:p></p>
+
+<p class=MsoListParagraph style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>rs.initiate() is a function that takes
+replicaset configuration variable as input and activates the replicaset.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>The command is executed to give
+following output.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_17"
+ o:spid="_x0000_i1030" type="#_x0000_t75" style='width:252.75pt;height:65.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image033.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=337 height=87
+src="MongoDB%20databases%20configuration_files/image033.png" v:shapes="Picture_x0020_17"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377074">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377074'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377074'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377074'><span style='mso-no-proof:yes'>40</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377074'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377074'> initiating replcaset</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Finally, we need to add two other
+instances of MongoDB databases to the same replcaset configuration variable
+using the command below.<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><span style='background:yellow;
+mso-highlight:yellow'>rs.add(&quot;localhost:27020&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><span style='background:yellow;
+mso-highlight:yellow'>rs.add(&quot;localhost:27021&quot;)</span><o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'>These command adds those 2
+instances to the replicaset individually. <o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'>The command is executed and
+following output is obtained.<o:p></o:p></p>
+
+<p class=MsoNoSpacing style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_18"
+ o:spid="_x0000_i1029" type="#_x0000_t75" style='width:468pt;height:318.75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image034.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=425
+src="MongoDB%20databases%20configuration_files/image035.jpg" v:shapes="Picture_x0020_18"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377075">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377075'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377075'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377075'><span style='mso-no-proof:yes'>41</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377075'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377075'> Adding remaining instances to the replicast</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>That is all we need to do while
+configuring the replicaset of different MongoDB instances. <o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'>Note: All those servers need to be up and running for the project to
+work while we turn on every system components.<o:p></o:p></b></p>
+
+<h4 style='text-align:justify;mso-list:l0 level4 lfo2'><a name="_Toc73376961"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.5.8<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Checking replicaset configuration</a><o:p></o:p></h4>
+
+<p class=MsoNormal style='text-align:justify'>Following command can be run into
+the same command prompt to view configuration written to replicaset variable.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='background:yellow;
+mso-highlight:yellow'>rs.conf()</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>The command displays the
+following output.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><!--[if gte vml 1]><v:group
+ id="Group_x0020_46" o:spid="_x0000_s1026" style='position:absolute;left:0;
+ text-align:left;margin-left:84.75pt;margin-top:81.25pt;width:212.25pt;
+ height:223.5pt;z-index:251659264' coordsize="26955,28384" o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF
+90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA
+0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD
+OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893
+SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y
+JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl
+bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR
+JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY
+22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i
+OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA
+IQBcZorVewMAAOYOAAAOAAAAZHJzL2Uyb0RvYy54bWzsV21P2zAQ/j5p/8Hy95E2bdoSkSIEA01C
+gICJz67jvEiO7dkuKfv1O9tJqKBsGtM2baIfXL+c785P7h6fDw43DUf3TJtaigyP90YYMUFlXosy
+w59vTz8sMDKWiJxwKViGH5jBh8v37w5albJYVpLnTCNQIkzaqgxX1qo0igytWEPMnlRMwGIhdUMs
+DHUZ5Zq0oL3hUTwazaJW6lxpSZkxMHsSFvHS6y8KRu1lURhmEc8w+GZ9q327cm20PCBpqYmqatq5
+QV7hRUNqAUYHVSfEErTW9TNVTU21NLKwe1Q2kSyKmjJ/BjjNePTkNGdarpU/S5m2pRpgAmif4PRq
+tfTi/kqjOs/wdIaRIA18I28WwRjAaVWZgsyZVjfqSncTZRi5824K3bh/OAnaeFgfBljZxiIKk/Fs
+P0nmCUYU1uLFZDFNOuBpBV/n2T5affzBzqg3HDn/BndaBUFkHnEyv4bTTUUU8/Abh0GHUzzgdA3R
+RUTJGYI5D42XG4AyqQHMdqCUzMeAANqBVJLE8xEsOaQm8WQRgBqOS1KljT1jskGuk2ENLvi4I/fn
+xoIPINqLOMNCntacwzxJuXCtkbzO3Zwf6HJ1zDW6J5Adp/AD00HHlhhodFsB6f48vmcfOAtqr1kB
+AeS+s/fEpy4b1BJKmbDjsFSRnAVryQh+vTGX7G6Hd58LUOg0F+DloLtT0EsGJb3u4HMn77Yyn/nD
+5tH3HAubhx3eshR22NzUQupdCjicqrMc5HuQAjQOJbtZbUDEdVcyf4AI0jJQkFH0tIZPeE6MvSIa
+OAe+OvCovYSm4LLNsOx6GFVSf9017+QhxGEVoxY4LMPmy5pohhH/JCD498fTqSM9P5gm8xgGentl
+tb0i1s2xhEAYA2Mr6rtO3vK+W2jZ3AHdHjmrsEQEBdsZplb3g2MbuBUIm7KjIy8GRKeIPRc3ijrl
+DmAXorebO6JVF8cWuOJC9glH0ifhHGTdTiGP1lYWtY/1R1w76CH5A9q/nwXmPVtuscD8p1gAEIQs
+H8fz2aTnwxcYE8izz5Web/skf+MBiNh/ggf8JesZ4zFs3+jgf6GD/R10sP8KOoihNuiyHa6xnWXQ
+bOZKhHDzvNGBuxReKDm6yzmUEU5uuORDvfJXywJPB3EfIW/VwZ+qDvyLAR5TvtbsHn7utbY99tXE
+4/N0+Q0AAP//AwBQSwMEFAAGAAgAAAAhAFasB53eAAAACwEAAA8AAABkcnMvZG93bnJldi54bWxM
+T01Lw0AUvAv+h+UJ3uwm1QQbsymlqKci2Aqlt9fsaxKa3Q3ZbZL+e19PepthhvnIl5NpxUC9b5xV
+EM8iEGRLpxtbKfjZfTy9gvABrcbWWVJwJQ/L4v4ux0y70X7TsA2V4BDrM1RQh9BlUvqyJoN+5jqy
+rJ1cbzAw7Supexw53LRyHkWpNNhYbqixo3VN5Xl7MQo+RxxXz/H7sDmf1tfDLvnab2JS6vFhWr2B
+CDSFPzPc5vN0KHjT0V2s9qJlni4Stt7AnAE7ksULvzsqSCOWZJHL/x+KXwAAAP//AwBQSwECLQAU
+AAYACAAAACEAtoM4kv4AAADhAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRlbnRfVHlwZXNdLnht
+bFBLAQItABQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAAAAAAAAAAAAAAC8BAABfcmVscy8ucmVs
+c1BLAQItABQABgAIAAAAIQBcZorVewMAAOYOAAAOAAAAAAAAAAAAAAAAAC4CAABkcnMvZTJvRG9j
+LnhtbFBLAQItABQABgAIAAAAIQBWrAed3gAAAAsBAAAPAAAAAAAAAAAAAAAAANUFAABkcnMvZG93
+bnJldi54bWxQSwUGAAAAAAQABADzAAAA4AYAAAAA
+">
+ <v:rect id="Rectangle_x0020_26" o:spid="_x0000_s1027" style='position:absolute;
+  left:571;width:25527;height:3238;visibility:visible;mso-wrap-style:square;
+  v-text-anchor:middle' o:gfxdata="UEsDBBQABgAIAAAAIQDb4fbL7gAAAIUBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbHyQz07DMAyH
+70i8Q+QralM4IITa7kDhCAiNB7ASt43WOlEcyvb2pNu4IODoPz9/n1xv9vOkForiPDdwXVagiI23
+jocG3rdPxR0oScgWJ8/UwIEENu3lRb09BBKV0ywNjCmFe63FjDSjlD4Q50nv44wpl3HQAc0OB9I3
+VXWrjedEnIq03oC27qjHjympx31un0wiTQLq4bS4shrAECZnMGVTvbD9QSnOhDInjzsyuiBXWQP0
+r4R18jfgnHvJr4nOknrFmJ5xzhraRtHWf3Kkpfz/yGo5S+H73hkquyhdjr3R8m2lj09svwAAAP//
+AwBQSwMEFAAGAAgAAAAhAFr0LFu/AAAAFQEAAAsAAABfcmVscy8ucmVsc2zPwWrDMAwG4Ptg72B0
+X5TuUMaI01uh19I+gLGVxCy2jGSy9e1nemrHjpL4P0nD4SetZiPRyNnCruvBUPYcYp4tXC/Htw8w
+Wl0ObuVMFm6kcBhfX4Yzra62kC6xqGlKVgtLreUTUf1CyWnHhXKbTCzJ1VbKjMX5LzcTvvf9HuXR
+gPHJNKdgQU5hB+ZyK23zHztFL6w81c5zQp6m6P9TMfB3PtPWFCczVQtB9N4U2rp2HOA44NMz4y8A
+AAD//wMAUEsDBBQABgAIAAAAIQAkvQSCxQAAANsAAAAPAAAAZHJzL2Rvd25yZXYueG1sRI9PawIx
+FMTvBb9DeIK3mq2HtWyNYoVSLxbqn4O3x+a5Wbp5iZu47n57Uyj0OMzMb5jFqreN6KgNtWMFL9MM
+BHHpdM2VguPh4/kVRIjIGhvHpGCgAKvl6GmBhXZ3/qZuHyuRIBwKVGBi9IWUoTRkMUydJ07exbUW
+Y5JtJXWL9wS3jZxlWS4t1pwWDHraGCp/9jerYPc+Pxnb73zoLtevs/8c8vV8UGoy7tdvICL18T/8
+195qBbMcfr+kHyCXDwAAAP//AwBQSwECLQAUAAYACAAAACEA2+H2y+4AAACFAQAAEwAAAAAAAAAA
+AAAAAAAAAAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLAQItABQABgAIAAAAIQBa9CxbvwAAABUBAAAL
+AAAAAAAAAAAAAAAAAB8BAABfcmVscy8ucmVsc1BLAQItABQABgAIAAAAIQAkvQSCxQAAANsAAAAP
+AAAAAAAAAAAAAAAAAAcCAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAMAAwC3AAAA+QIAAAAA
+" filled="f" strokecolor="yellow" strokeweight="1pt">
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=right style='text-align:right'>Primary instance<o:p></o:p></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="Rectangle_x0020_27" o:spid="_x0000_s1028" style='position:absolute;
+  top:12763;width:26955;height:2858;visibility:visible;mso-wrap-style:square;
+  v-text-anchor:middle' o:gfxdata="UEsDBBQABgAIAAAAIQDb4fbL7gAAAIUBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbHyQz07DMAyH
+70i8Q+QralM4IITa7kDhCAiNB7ASt43WOlEcyvb2pNu4IODoPz9/n1xv9vOkForiPDdwXVagiI23
+jocG3rdPxR0oScgWJ8/UwIEENu3lRb09BBKV0ywNjCmFe63FjDSjlD4Q50nv44wpl3HQAc0OB9I3
+VXWrjedEnIq03oC27qjHjympx31un0wiTQLq4bS4shrAECZnMGVTvbD9QSnOhDInjzsyuiBXWQP0
+r4R18jfgnHvJr4nOknrFmJ5xzhraRtHWf3Kkpfz/yGo5S+H73hkquyhdjr3R8m2lj09svwAAAP//
+AwBQSwMEFAAGAAgAAAAhAFr0LFu/AAAAFQEAAAsAAABfcmVscy8ucmVsc2zPwWrDMAwG4Ptg72B0
+X5TuUMaI01uh19I+gLGVxCy2jGSy9e1nemrHjpL4P0nD4SetZiPRyNnCruvBUPYcYp4tXC/Htw8w
+Wl0ObuVMFm6kcBhfX4Yzra62kC6xqGlKVgtLreUTUf1CyWnHhXKbTCzJ1VbKjMX5LzcTvvf9HuXR
+gPHJNKdgQU5hB+ZyK23zHztFL6w81c5zQp6m6P9TMfB3PtPWFCczVQtB9N4U2rp2HOA44NMz4y8A
+AAD//wMAUEsDBBQABgAIAAAAIQBL8aEZxQAAANsAAAAPAAAAZHJzL2Rvd25yZXYueG1sRI9PawIx
+FMTvQr9DeIXeNFsPbtkaxQpiLwr+6aG3x+a5Wbp5iZt03f32jSD0OMzMb5j5sreN6KgNtWMFr5MM
+BHHpdM2VgvNpM34DESKyxsYxKRgowHLxNJpjod2ND9QdYyUShEOBCkyMvpAylIYshonzxMm7uNZi
+TLKtpG7xluC2kdMsm0mLNacFg57Whsqf469VsPvIv4ztdz50l+v+22+H2SoflHp57lfvICL18T/8
+aH9qBdMc7l/SD5CLPwAAAP//AwBQSwECLQAUAAYACAAAACEA2+H2y+4AAACFAQAAEwAAAAAAAAAA
+AAAAAAAAAAAAW0NvbnRlbnRfVHlwZXNdLnhtbFBLAQItABQABgAIAAAAIQBa9CxbvwAAABUBAAAL
+AAAAAAAAAAAAAAAAAB8BAABfcmVscy8ucmVsc1BLAQItABQABgAIAAAAIQBL8aEZxQAAANsAAAAP
+AAAAAAAAAAAAAAAAAAcCAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAMAAwC3AAAA+QIAAAAA
+" filled="f" strokecolor="yellow" strokeweight="1pt">
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=right style='text-align:right'>Secondary Instance<o:p></o:p></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="Rectangle_x0020_29" o:spid="_x0000_s1029" style='position:absolute;
+  top:25717;width:26955;height:2667;visibility:visible;mso-wrap-style:square;
+  v-text-anchor:middle' o:gfxdata="UEsDBBQABgAIAAAAIQDb4fbL7gAAAIUBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbHyQz07DMAyH
+70i8Q+QralM4IITa7kDhCAiNB7ASt43WOlEcyvb2pNu4IODoPz9/n1xv9vOkForiPDdwXVagiI23
+jocG3rdPxR0oScgWJ8/UwIEENu3lRb09BBKV0ywNjCmFe63FjDSjlD4Q50nv44wpl3HQAc0OB9I3
+VXWrjedEnIq03oC27qjHjympx31un0wiTQLq4bS4shrAECZnMGVTvbD9QSnOhDInjzsyuiBXWQP0
+r4R18jfgnHvJr4nOknrFmJ5xzhraRtHWf3Kkpfz/yGo5S+H73hkquyhdjr3R8m2lj09svwAAAP//
+AwBQSwMEFAAGAAgAAAAhAFr0LFu/AAAAFQEAAAsAAABfcmVscy8ucmVsc2zPwWrDMAwG4Ptg72B0
+X5TuUMaI01uh19I+gLGVxCy2jGSy9e1nemrHjpL4P0nD4SetZiPRyNnCruvBUPYcYp4tXC/Htw8w
+Wl0ObuVMFm6kcBhfX4Yzra62kC6xqGlKVgtLreUTUf1CyWnHhXKbTCzJ1VbKjMX5LzcTvvf9HuXR
+gPHJNKdgQU5hB+ZyK23zHztFL6w81c5zQp6m6P9TMfB3PtPWFCczVQtB9N4U2rp2HOA44NMz4y8A
+AAD//wMAUEsDBBQABgAIAAAAIQBVIpDwxAAAANsAAAAPAAAAZHJzL2Rvd25yZXYueG1sRI9BawIx
+FITvBf9DeIK3mq0HtVujqCD1YkHbHnp7bJ6bpZuXuEnX3X/fCILHYWa+YRarztaipSZUjhW8jDMQ
+xIXTFZcKvj53z3MQISJrrB2Tgp4CrJaDpwXm2l35SO0pliJBOOSowMTocylDYchiGDtPnLyzayzG
+JJtS6gavCW5rOcmyqbRYcVow6GlrqPg9/VkFh83s29ju4EN7vnz8+Pd+up71So2G3foNRKQuPsL3
+9l4rmLzC7Uv6AXL5DwAA//8DAFBLAQItABQABgAIAAAAIQDb4fbL7gAAAIUBAAATAAAAAAAAAAAA
+AAAAAAAAAABbQ29udGVudF9UeXBlc10ueG1sUEsBAi0AFAAGAAgAAAAhAFr0LFu/AAAAFQEAAAsA
+AAAAAAAAAAAAAAAAHwEAAF9yZWxzLy5yZWxzUEsBAi0AFAAGAAgAAAAhAFUikPDEAAAA2wAAAA8A
+AAAAAAAAAAAAAAAABwIAAGRycy9kb3ducmV2LnhtbFBLBQYAAAAAAwADALcAAAD4AgAAAAA=
+" filled="f" strokecolor="yellow" strokeweight="1pt">
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=right style='text-align:right'>Secondary Instance<o:p></o:p></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect></v:group><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+position:absolute;z-index:251659264;left:0px;margin-left:112px;margin-top:107px;
+width:289px;height:305px'><img width=289 height=305
+src="MongoDB%20databases%20configuration_files/image036.png" v:shapes="Group_x0020_46 Rectangle_x0020_26 Rectangle_x0020_27 Rectangle_x0020_29"></span><![endif]><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_19"
+ o:spid="_x0000_i1028" type="#_x0000_t75" style='width:468pt;height:405.75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image037.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=541
+src="MongoDB%20databases%20configuration_files/image038.jpg" v:shapes="Picture_x0020_19"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377076">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377076'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377076'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377076'><span style='mso-no-proof:yes'>42</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377076'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377076'> checking replicaset configuration</span><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Since each replicaset can have
+only one Primary server at most and the MongoDB prompt on current command
+prompt shows the label “PRIMARY” which indicates that the MongoDB instance
+running on port 27017 is the primary server and hence rest of the two instances
+become secondary servers automatically.<o:p></o:p></p>
+
+<h3 style='text-align:justify;mso-list:l0 level3 lfo2'><a name="_Toc73376962"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Defining MongoDB Trackerstore inside Rasa
+chatbot</a><o:p></o:p></h3>
+
+<p class=MsoNormal style='text-align:justify'>Now MongoDB database is installed
+and running. Now we need to define MongoDB Trackerstore in ‘endpoints.yml’
+which is present inside root directory of Rasa chatbot we created earlier.
+Following snapshots displays required information changes while defining
+MongoDB Trackerstore. Following details need to be supplied while defining
+MongoDB Trackerstore.<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>‘type’ specifying driver for the database used
+which is ‘mongd’ in this case<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>‘url’ specifying complete IP of the primary
+MongoDB server<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>‘db’ specifying name of the database. If
+database with supplied name does not already exists in database then it will be
+created automatically.<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>‘username’ specifying username that can be used
+for logging into the database<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>‘password’ specifying password as login
+credential for logging into the database<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>After locating ’endpoints.yml’
+file, the file is opened on Visual Studion Code. The code requiring
+modification is selected as shown below.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_48"
+ o:spid="_x0000_i1027" type="#_x0000_t75" style='width:468pt;height:319.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image039.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=426
+src="MongoDB%20databases%20configuration_files/image040.jpg" v:shapes="Picture_x0020_48"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377077">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377077'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377077'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377077'><span style='mso-no-proof:yes'>43</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377077'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377077'> highlighting the code to be modified</span><o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>while uncommenting the code the resulting
+indentation should be preserved and necessary details should be supplied<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>CTRL + K + U could be pressed simultaneously to
+uncomment those lines.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_50"
+ o:spid="_x0000_i1026" type="#_x0000_t75" style='width:468pt;height:408pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image041.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=544
+src="MongoDB%20databases%20configuration_files/image042.jpg" v:shapes="Picture_x0020_50"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377078">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377078'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377078'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377078'><span style='mso-no-proof:yes'>44</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377078'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377078'> Updating MongoDB TrackerStore in
+endpoints.yml file</span><o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>url defined is the IP address of the primary
+MongoDB server we created earlier.<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>db defined is ‘mydb’.<o:p></o:p></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>username and password is not used hence left as
+blank<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><span
+style='mso-spacerun:yes'> </span>The file is saved after editing.<o:p></o:p></p>
+
+<h3 style='text-align:justify;mso-list:l0 level3 lfo2'><a name="_Toc73376963"><![if !supportLists]><span
+style='mso-fareast-font-family:"Calibri Light";mso-fareast-theme-font:major-latin;
+mso-bidi-font-family:"Calibri Light";mso-bidi-theme-font:major-latin'><span
+style='mso-list:Ignore'>1.1.7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Verifying conversation being stored in MongoDB</a><o:p></o:p></h3>
+
+<p class=MsoNormal style='text-align:justify'>Pre-condition for this step to
+work correctly is we need to have chatbot already running with endpoints APIs
+enabled, MongoDB also running and endpoint already configured with MongoDB
+Trackerstore. Next, we need to verify that the MongoDB Trackersotre is storing
+conversation inside primary MongoDB server. <o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>However, since we still have not
+developed any UI for interacting with Rasa chatbot we interact wth Rasa chatbot
+using Postman to communicate as we did earlier to verify two way communication
+between the chatbot and the client. <o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>MongoDB Compass is connected to
+MongoDB instance running on port 27017.<o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_51"
+ o:spid="_x0000_i1025" type="#_x0000_t75" style='width:468pt;height:245.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="MongoDB%20databases%20configuration_files/image043.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=624 height=327
+src="MongoDB%20databases%20configuration_files/image044.jpg" v:shapes="Picture_x0020_51"><![endif]></span><o:p></o:p></p>
+
+<p class=MsoCaption style='text-align:justify'><a name="_Toc73377079">Figure </a><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377079'></span><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:_Toc73377079'><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc73377079'><span style='mso-no-proof:yes'>45</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc73377079'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Toc73377079'> MongoDB compass connected to Primary MongoDB
+server</span><o:p></o:p></p>
+
+<p class=MsoListParagraph style='text-align:justify;text-indent:-.25in;
+mso-list:l1 level1 lfo1'><![if !supportLists]><span style='mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>The Compass is connected to MongoDB server on
+27017, the IP which we defined on ‘endpoints.yml’ file.<o:p></o:p></p>
+
+<p class=MsoNormal>There is no database ‘mydb’ created yet.</p>
+
+</div>
+
+</body>
+
+</html>
